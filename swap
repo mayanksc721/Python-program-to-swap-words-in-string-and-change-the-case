@@ -1,0 +1,31 @@
+def reverse(arr):
+# change the placement of sentence
+    str=arr.split()
+    str=list(reversed(str))
+    i=" ".join(str)
+    word=[]
+    word=list(i)
+    print(word)
+
+
+
+    #print(type(str))
+    l1=""
+    new=[]
+
+# change in the casing of letters
+    for i in range(0,len(word)):
+        if word[i].isupper():
+            new.append(word[i].lower())
+        else:
+            new.append(word[i].upper())
+
+
+    l1=" ".join(new)
+
+    print(l1)
+
+#input is given
+arr=("Hellow World")
+print(type(arr))
+reverse(arr)
